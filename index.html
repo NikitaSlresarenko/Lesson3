@@ -10,16 +10,16 @@
     <script>
       function agetostr(age) {
 	var age  = prompt ('How old are u?');
-	Old = age;
-	if (Old >= 5 && Old <= 20) {
+	old = age % 100;
+	if (old >= 5 && old <= 20) {
 		txt = 'лет';
 	} else {
-		Old = Old % 10;
-		if (Old == 1) {
+		old = old % 10;
+		if (old == 1) {
 			
             txt = 'год';
 
-		} else if (Old >= 2 && Old <= 4) {
+		} else if (old >= 2 && old <= 4) {
 			txt = 'года';
            
 		} else {
